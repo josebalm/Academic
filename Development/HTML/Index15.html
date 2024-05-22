@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> FORMULARIOS</h1>
+    <form  action="url-desconocida" method="get"> <!-- El metodo GET envia la informacion en la URL que dirige al Back end, en esta ocasion URL distinta no es una URL valida, 
+        es solo de ejemplo y  no funcionara-->
+        <!-- Si utilizo un metodo post no se enviara en la URL, esta se enviara en el cuerpo o Body y se podra evidenciar en la opcion inspeccionar / payload, donde se evidencia 
+            que se envia en cada campo es necesario tener de igual manera la url del back end que recibe los datos.-->
+
+        <!-- INPUT TYPE TEXT -->
+        <h4>Datos Personales</h4><br>
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="Apellido">apellido</label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <!-- INPUT RADIO BUTTON -->
+        <h4>Situacion Laboral</h4<br>
+        <label for="empleado">Empleado</label>
+        <input type="radio" name="situacion - Laboral" id="empleado">
+        <label for="desempleado">Desempleado</label>
+        <input type="radio" name="situacion - Laboral" id="desempleado">
+        <label for="busqueda">En busqueda Activa</label>
+        <input type="radio" name="situacion - Laboral" id="busqueda">
+        <br>
+        <!-- INPUT TYPE CHECK BOX -->
+        <h4> TECNOLOGIAS QUE MANEJAS</h4>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="tecnologias" id="html" value="1">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="tecnologias" id="css" value="2">
+        <label for="javascript">JAVASCRIPT</label>
+        <input type="checkbox" name="tecnologias" id="javascript" value="3">
+        <label for="react">REACT</label>
+        <input type="checkbox" name="tecnologias" id="react" value="4">
+        <br>
+         <!-- TEXTAREA    -->
+         <label for="motivo">Motivo:</label>
+         <br>
+         <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
+
+
+        <!-- INPUT TYPE SUBMIT -->
+        <input type="submit" value="Enviar">
+
+
+        <br>
+
+    </form>
+    
+</body>
+</html>

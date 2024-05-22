@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form method="get">
+        <label for="name">Escribe tu nombre</label>
+        <input type="text" name="name" id="name" value="JOSE" disabled>   <!--Escribe un nombre en el campo ya predeterminado que no puede modficarse por el usuario-->
+        <br>
+        <label for="name2">Escribe tu nombre2</label>
+        <input type="text" name="name2" id="name2" value="JOSE" size="5">  <!--Escribe un texto con un numero limitado de caracteres-->
+        <br>
+        <label for="name2">Escribe tu nombre3</label>
+        <input type="text" name="name3" id="name3" minlength="2" maxlength="5">  <!--Escribe un texto con un minimo y maximo de caracteres definidos -->
+        <br>
+        <label for="date">Escribe una fecha entre el 1900 y la fecha actual</label>
+        <input type="date" name="date" id="date" min="1900-01-01" max="2023-12-25">  <!--Escribe una fecha limitando a un rango especifico -->
+        <br>
+        <label for="file">Selecciona Varios Archivos</label>
+        <input type="file" name="file" id="file" multiple>  <!-- Genera un campo con un boton que permite seleccionar multiples archivos adjuntos -->
+        <br>
+        <label for="code">Escribe tu nombre2</label>
+        <input type="text" name="code" id="code" pattern="[A-Z]{3}">  <!-- un campo de texto limitado a un patron, en este caso Mayusculas entre la A y la Z y obligando a 3 caracteres -->
+        <br>
+        <!-- Forma de crear campos sin Labels - En este caso en el mimo campo queda sombreado el nombre del campo -->
+        <input type="text" name="name" id="name" placeholder="Escribe tu nombre"> 
+        <br>
+        <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required> <!-- Configurar un campo requerido-->
+        <br>
+        <input type="text" name="trabajo" id="trabajo" placeholder="Escribe tu Trabajo" autofocus> <!-- Hace foco en un campo importante-->
+        <br>
+        <input type="text" name="trabajo" id="trabajo" placeholder="Escribe tu Trabajo" autofocus autocomplete="off"> <!-- Autocomplete OFF me permite deshabiliar la opcion de que se complete el campo-->
+
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

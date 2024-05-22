@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Tablas Incluyendo un estilo predefinido</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+
+</head>
+<body>
+    <h1> Tablas en HTML</h1>
+
+    <table> <!-- Etiqueta de tabla -->
+        <colgroup>
+            <col span="1" style="background-color: rgb(8, 38, 63);"> <!-- Colgrup me permite resaltar o coloreal columnas-->
+        </colgroup>
+
+        <tr>  <!-- Etiqueta de Fila (row) -->
+            <th>Alumnos</th>  <!-- Etiqueta de tabla Header (Encabezado de Tabla) -->
+            <th colspan="2">Nombre y Apellido</th> <!-- Colspan nos ayudara a extender horizontalmente-->
+            <th>Notas</th>
+
+        </tr>
+
+        <tr>
+            <th>1</td>   <!-- Etiqueta de table data (información de tabla)-->
+            <td>Pedro</td>   
+            <td>Perez</td>   
+            <td>8</td>
+        </tr>
+            
+        <tr>
+            <th>2</td>   
+            <td>Rodrigo</td>   
+            <td>Gonzales</td>   
+            <td>9</td>
+        </tr>
+    
+        <tr>
+            <th>3</td>   
+            <td>Humberto</td>   
+            <td rowspan="2">Velez</td>   <!-- Rowspan nos ayudara a extender Verticalmente-->
+            <td>7</td>
+        </tr>
+    
+        <tr>
+            <th>4</td>   
+            <td>Cecilia</td>   
+            <!-- <td>Ramirez</td>    -->
+            <td>9</td>
+        </tr>
+    
+    </table>
+    
+</body>
+</html>

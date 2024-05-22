@@ -1,0 +1,79 @@
+p{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+
+div{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%;
+}
+
+
+/*
+
+#position{
+    position: static;
+    color: red;
+}
+
+*/
+/*
+#position{
+    position: relative;    
+    top: 15px;
+    left: 15px;
+    color: red;
+
+}
+*/
+/*
+#position{
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    color: red;
+
+}
+*/
+/*
+#position{
+    position: fixed;
+    color: red;
+
+}
+*/
+/*
+#position{
+    position: fixed;
+    top: 100px;
+    color: red;
+
+}
+*/
+/*
+#position{
+    position: absolute;
+    top: 100px;
+    color: red;
+
+}
+*/
+#position{
+    position: fixed;
+    top: 100px;
+    background-color: yellow;
+    color: red;
+
+}
+
+#position2{
+    position: sticky;
+    top: 100px;
+    background-color: blue;
+    color: green;
+
+}
