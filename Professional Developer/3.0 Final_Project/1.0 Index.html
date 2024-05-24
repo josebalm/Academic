@@ -28,16 +28,56 @@
 
     <header>
         <!-- logo -->
-    <a href="#" class="logo">JOSE CODE</a>
+        <a href="#" class="logo">JOSE CODE</a>
 
-    <ul class="navlist">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SOBRE MI</a></li>
-        <li><a href="#">PORFOLIO</a></li>
-        <li><a href="#">CONTACTO</a></li>
-    </ul>
+    
+    <!-- Truco para que el boton sea clickeable sin usar javascrip. -->
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon-action">
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </label>
+
+        
+
+
+        <ul class="navlist">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">PORFOLIO</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+
     </header>
-    
-    
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+            <div class="hero-text">
+                <h5>Fronted Developer</h5>
+                <h4>ReactJS Tech Lead</h4>
+                <h1>Jose Code</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit quia dolorem <br>
+                    consequuntur laudantium soluta natus repellat asperiores eum, dolores necessitatibus <br> 
+                    çofficia minus tempore aspernatur ipsa illo amet repellendus voluptates.
+                </p>
+                <a href="#">CV</a>
+                <a href="#" class="Videos"><i class="ri-play-fill"></i>Mira mis Videos</a>
+            </div>
+
+            <div class="hero-img">
+                <img src="assets_2/imgs/Photo.jpeg" alt="Jose Code Foto">
+            </div>
+        </section>
+
+        <div class="icons">
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+            
+        </div>
+
+        <div class="scroll-down">
+            <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+        </div>
+
 </body>
 </html>
